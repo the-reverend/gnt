@@ -1,0 +1,108 @@
+The byz-prsd was replaced by byz-prsd-new by Robinson.
+Changes:
+    date 1995/0701 -> 1996/03/21
+    Change parse numbers for several verb forms 890x -> 590x.
+	This mostly affected forms of DEIN, PREPEIN, ECESTI, MELEI, EXON, KAQHKONTA.
+    Fix about 8 garbled brace/parse errors.
+    Docs comment on changes.
+
+The byz-prsd-new -> byz-prsd-new-corr changes were my own:
+    Split/join INATI.
+    Fix garbled braces/numbers.
+    Add missing parsings.
+
+---------------------------------------------------------------------------------
+
+The greeknt.mrp is from CCAT.
+
+The greeknt.mrp2 differs from the previous by the patch morphGNT.diff from tauber.
+    The patch fixes parsing errors due to machine parsing, mostly in the lemmas.
+
+The tauber-gnt-morph.1 comes from tauber, described in mail below.
+    Changes from greeknt.mrp2 to tauber-gnt-morph.1 :
+    add fields as mentioned in the mail below.
+    Changed case from *lower to Upper.
+    parsing put person of verbs as first letter, not 4th.
+    Correct lemmas for: ZWNAS, MARTURIA, APOSTOLHS, KAISAREIAN,
+	AREION PAGON, PORNOIS, MARANA QA, EQELOQRHSKIA,
+	EIDWLOLATRIAIS.
+    Correct part of speech for ANWTERON, KAKOPOIWN, AGAQOPOIWN.
+
+The tauber-gnt-morph.2 differs from .1 in the correction of garbled
+    words of text from the three editions.  They should have been
+    equal in all three columns, because all come from NA26.
+    These are the problem triplets that were made consistent.
+
+sklhrotraxhloi sklhrotrax sklhrotraxhloi
+drousillh empaizontes drousillh
+anesin lema anesin
+anaqhmasin mesou anaqhmasin
+autw eipan autw
+epilabomenoi epilabomen epilabomenoi
+eipan autw eipan
+euxaristountes euxaristoun euxaristountes
+idiwn xolhs idiwn
+kalois eceleusontai kalois
+katekleisen katekleis katekleisen
+kekosmhtai aforiousin kekosmhtai
+kwluein kraniou kwluein
+liqois legetai liqois
+peirazomenos peirazomeno peirazomenos
+threisqai kracas threisqai
+uphretein gegrammenhn uphretein
+usterhmatos profhths usterhmatos
+
+The tauber-gnt-morph.3 differs from .2 in the following changes:
+    Delete $1 ... $ font change marks.
+    Change [1 ... ]1 parenthesis marks to { ... } .
+    Move a smooth breathing in word 67795?
+    Change Uppercase to *lowercase.
+    Delete @ tab character.
+    Change the single-char parts of speech to have a trailing
+	hyphen, so that all fields are separated by one space,
+	but can still line up.
+
+-------------------------------------------------------------------------
+
+From jtauber@tartarus.uwa.edu.au Fri Sep  1 03:38:07 1995
+Return-Path: <jtauber@tartarus.uwa.edu.au>
+Date: Fri, 1 Sep 1995 13:10:57 +0800 (WST)
+From: "James K. Tauber" <jtauber@tartarus.uwa.edu.au>
+To: broman@nosc.mil
+Subject: Re: Archive is set up!
+In-Reply-To: <9508301531.AA19368@Np.nosc.mil>
+Mime-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+
+On Wed, 30 Aug 1995, Vincent Broman wrote:
+> 
+> As long as the format is straightforward, yes, please.  Just give
+> me the location.  I am fairly handy with awk and sed.
+
+You can pick up the file as:
+
+	http://www.uwa.edu.au/student/jtauber/tau-gnt.gz
+
+It's 1.4M compressed.
+
+Fields are:
+
+book/chapter/verse 
+! 
+part-of-speech 
+Derived-MorphGNT-tag 
+Friberg-tag 
+! 
+UBS3-text 
+Friberg-text 
+MorphGNT-text 
+! 
+Lemma
+
+James K. Tauber <jtauber@tartarus.uwa.edu.au>
+University Computing Services and Centre for Linguistics
+University of Western Australia, Perth, AUSTRALIA
+http://www.uwa.edu.au/student/jtauber
+
+--------------------------------------------------------------------------
+
